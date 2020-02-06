@@ -4,8 +4,15 @@
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
     </div>
+
     <router-view/>
-  </div>
+        <div class="fb-customerchat"
+        attribution=setup_tool
+        page_id="108398407383203">
+        </div>
+       <div id="fb-root">
+       </div>
+   </div>
 </template>
 
 <style lang="scss">
