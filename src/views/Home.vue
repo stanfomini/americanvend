@@ -2,19 +2,19 @@
   <div class="home">
 <HelloWorld msg="Welcome to American Vend!"/>
 	<div class="container-fluid">
-		<div class="row">
+		<div id="samepagenav" class="row">
 			<div class="col-md-12">
 				<ul class="nav">
-					<li class="nav-item">
+					<li class="nav-item d-none d-xs-none d-sm-block">
 						<a class="nav-link active" href="#">Home</a>
 					</li>
-					<li class="nav-item">
+					<li class="nav-item d-none d-xs-none d-sm-block">
 						<a class="nav-link" href="#">Profile</a>
 				</li>
-				<li class="nav-item">
+				<li class="nav-item d-none d-xs-none d-sm-block">
 					<a class="nav-link disabled" href="#">Messages</a>
 				</li>
-				<li class="nav-item dropdown ml-md-auto">
+				<li class="nav-item dropdown d-block d-sm-none">
 					 <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown">Dropdown link</a>
 					<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
 						 <a class="dropdown-item" href="#">Action</a> <a class="dropdown-item" href="#">Another action</a> <a class="dropdown-item" href="#">Something else here</a>
@@ -178,3 +178,9 @@ export default {
   },
 };
 </script>
+
+<style>
+   #samepagenav {
+	display: inline-block;
+}
+</style>
