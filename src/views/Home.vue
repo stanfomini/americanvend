@@ -1,7 +1,169 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+<HelloWorld msg="Welcome to American Vend!"/>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12">
+				<ul class="nav">
+					<li class="nav-item">
+						<a class="nav-link active" href="#">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Profile</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link disabled" href="#">Messages</a>
+				</li>
+				<li class="nav-item dropdown ml-md-auto">
+					 <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown">Dropdown link</a>
+					<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+						 <a class="dropdown-item" href="#">Action</a> <a class="dropdown-item" href="#">Another action</a> <a class="dropdown-item" href="#">Something else here</a>
+						<div class="dropdown-divider">
+						</div> <a class="dropdown-item" href="#">Separated link</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<div class="jumbotron">
+				<h2>
+					Hello, world!
+				</h2>
+				<p>
+					This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.
+				</p>
+				<p>
+					<a class="btn btn-primary btn-large" href="#">Learn more</a>
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-4">
+			<h2>
+				Heading
+			</h2>
+			<p>
+				Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+			</p>
+			<p>
+				<a class="btn" href="#">View details »</a>
+			</p>
+		</div>
+		<div class="col-md-4">
+			<h2>
+				Heading
+			</h2>
+			<p>
+				Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+			</p>
+			<p>
+				<a class="btn" href="#">View details »</a>
+			</p>
+		</div>
+		<div class="col-md-4">
+			<h2>
+				Heading
+			</h2>
+			<p>
+				Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+			</p>
+			<p>
+				<a class="btn" href="#">View details »</a>
+			</p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<dl>
+				<dt>
+					Description lists
+				</dt>
+				<dd>
+					A description list is perfect for defining terms.
+				</dd>
+				<dt>
+					Euismod
+				</dt>
+				<dd>
+					Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.
+				</dd>
+				<dd>
+					Donec id elit non mi porta gravida at eget metus.
+				</dd>
+				<dt>
+					Malesuada porta
+				</dt>
+				<dd>
+					Etiam porta sem malesuada magna mollis euismod.
+				</dd>
+				<dt>
+					Felis euismod semper eget lacinia
+				</dt>
+				<dd>
+					Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+				</dd>
+			</dl>
+			 <a id="modal-105973" href="#modal-container-105973" role="button" class="btn" data-toggle="modal">Launch demo modal</a>
+			
+			<div class="modal fade" id="modal-container-105973" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="myModalLabel">
+								Modal title
+							</h5> 
+							<button type="button" class="close" data-dismiss="modal">
+								<span aria-hidden="true">×</span>
+							</button>
+						</div>
+						<div class="modal-body">
+							...
+						</div>
+						<div class="modal-footer">
+							 
+							<button type="button" class="btn btn-primary">
+								Save changes
+							</button> 
+							<button type="button" class="btn btn-secondary" data-dismiss="modal">
+								Close
+							</button>
+						</div>
+					</div>
+					
+				</div>
+				
+			</div>
+			
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<blockquote class="blockquote">
+				<p class="mb-0">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+				</p>
+				<footer class="blockquote-footer">
+					Someone famous in <cite>Source Title</cite>
+				</footer>
+			</blockquote>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<blockquote class="blockquote">
+				<p class="mb-0">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+				</p>
+				<footer class="blockquote-footer">
+					Someone famous in <cite>Source Title</cite>
+				</footer>
+			</blockquote>
+		</div>
+	</div>
+</div>
   </div>
 </template>
 
