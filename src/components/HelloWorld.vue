@@ -10,6 +10,15 @@ export default {
   props: {
     msg: String,
   },
+
+methods: {
+    goto(refName) {
+    	var element = this.$els[refName];
+      var top = element.offsetTop;
+      
+      window.scrollTo(0, top);
+    }
+  }
 };
 </script>
 
