@@ -7,9 +7,9 @@ import router from './router';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap-vue/dist/bootstrap-vue.css';
-import "node_modules/bootstrap/scss/functions";
-import "node_modules/bootstrap/scss/variables";
-import "node_modules/bootstrap/scss/mixins";
+//@import "node_modules/bootstrap/scss/functions";
+//@import "node_modules/bootstrap/scss/variables";
+//@import "node_modules/bootstrap/scss/mixins";
 
 Vue.config.productionTip = false;
 
