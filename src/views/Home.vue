@@ -10,7 +10,7 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3 v-b-scrollspy" id="mainNav">
     <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">Start Bootstrap</a>
+      <a class="navbar-brand js-scroll-trigger" href="#page-top"><img class="img-fluid" src="../assets/smalllogo.png" alt=""></a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -219,6 +219,8 @@
     </div>
   </section>
 
+  <iframe frameborder="0" style="height:500px;width:99%;border:none;" src='https://forms.zohopublic.com/americanvend/form/Test/formperma/zKjNJeRcs0qeoFyE4ytIYNPAEfj8GsvsGQ6qNAUr7z8'></iframe>
+
   <!-- Footer -->
   <footer class="bg-light py-5">
     <div class="container">
@@ -226,6 +228,8 @@
     </div>
   </footer>
 </div>
+
+
   
   
 
@@ -243,7 +247,30 @@ export default {
 };
 
 
-
+(function() {
+try{
+var f = document.createElement("iframe");   
+f.src = 'https://forms.zohopublic.com/americanvend/form/Test/formperma/zKjNJeRcs0qeoFyE4ytIYNPAEfj8GsvsGQ6qNAUr7z8?zf_rszfm=1';
+f.style.border="none";                                           
+f.style.height="494px";
+f.style.width="90%";
+f.style.transition="all 0.5s ease";// No I18N
+var d = document.getElementById("zf_div_zKjNJeRcs0qeoFyE4ytIYNPAEfj8GsvsGQ6qNAUr7z8");
+d.appendChild(f);
+window.addEventListener('message', function (){
+var zf_ifrm_data = event.data.split("|");
+var zf_perma = zf_ifrm_data[0];
+var zf_ifrm_ht_nw = ( parseInt(zf_ifrm_data[1], 10) + 15 ) + "px";
+var iframe = document.getElementById("zf_div_zKjNJeRcs0qeoFyE4ytIYNPAEfj8GsvsGQ6qNAUr7z8").getElementsByTagName("iframe")[0];
+if ( (iframe.src).indexOf('formperma') > 0 && (iframe.src).indexOf(zf_perma) > 0 ) {
+var prevIframeHeight = iframe.style.height;
+if ( prevIframeHeight != zf_ifrm_ht_nw ) {
+iframe.style.height = zf_ifrm_ht_nw;
+}   
+}
+}, false);
+}catch(e){}
+})();
 
 
 
@@ -414,7 +441,7 @@ header.masthead {
   padding-bottom: calc(10rem - #{$navbar-height});
   // replace the masthead.jpg image in the /img directory to change the image
   // if the image name change, make sure to update the url path below!
-  background: linear-gradient(to bottom, #{fade-out($brown, .2)} 0%,#{fade-out($brown, .2)} 100%), url('../assets/logo.svg');
+  background: linear-gradient(to bottom, #{fade-out($brown, .2)} 0%,#{fade-out($brown, .2)} 100%), url('../assets/logowbackground.png');
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
