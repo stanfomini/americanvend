@@ -1,14 +1,8 @@
 <template>
   <div class="home">
 
-  
-
-
-
-
-
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3 v-b-scrollspy" id="mainNav">
+  <!-- <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3 v-b-scrollspy" id="mainNav">
     <div class="container">
       <a class="navbar-brand js-scroll-trigger" href="#page-top"><img class="img-fluid" src="../assets/smalllogo.png" alt=""></a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,18 +25,18 @@
         </ul>
       </div>
     </div>
-  </nav>
+  </nav> -->
 
   <!-- Masthead -->
   <header class="masthead">
     <div class="container h-100">
       <div class="row h-100 align-items-center justify-content-center text-center">
         <div class="col-lg-10 align-self-end">
-          <h1 class="text-uppercase text-white font-weight-bold">Your Favorite Source of Free Bootstrap Themes</h1>
+          <h1 class="text-uppercase text-white font-weight-bold">Are we a vendor that can work with your business?</h1>
           <hr class="divider my-4">
         </div>
         <div class="col-lg-8 align-self-baseline">
-          <p class="text-white-75 font-weight-light mb-5">Start Bootstrap can help you build better websites using the Bootstrap framework! Just download a theme and start customizing, no strings attached!</p>
+          <h3 class="text-white font-weight-light mb-5">Answer:: YES! Our mission is to keep your employees and customers ready to interact with your business.</h3>
           <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>
         </div>
       </div>
@@ -54,9 +48,20 @@
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-8 text-center">
-          <h2 class="text-white mt-0">We've got what you need!</h2>
+          <h2 class="text-white mt-0">When you invite us into your business do we add liability or tax risk?</h2>
           <hr class="divider light my-4">
-          <p class="text-white-50 mb-4">Start Bootstrap has everything you need to get your new website up and running in no time! Choose one of our open source, free to download, and easy to use themes! No strings attached!</p>
+          <h3 class="text-black mb-4"><span style="background-color: #FFFF00"><b>The answer is no.  In the state of Colorado we are required to provide proper insurace and you do not need a special sales tax license.</b></span></h3>
+          <h2 class="text-white mt-0">What kind of machine is best for my business?</h2>
+          <hr class="divider light my-4">
+          <h3 class="text-black mb-4"><span style="background-color: #FFFF00"><b>We have a process to figure this out. We call it Curated Fitting.
+            When you are unsure if you want a simple coin candy/gumball dispensor, game/claw/sticker machine, or Candy/Soda machine you can just reach out to us and we will help find the best machine for your business! You can
+            If you use our chat feature on this page you can talk to a real person to help answer any quetions. </b></span></h3>
+             <h2 class="text-white mt-0">When you invite us into your business do we add liability or tax risk?</h2>
+          <hr class="divider light my-4">
+          <h3 class="text-black mb-4"><span style="background-color: #FFFF00"><b>The answer is no.  In the state of Colorado we are required to provide proper insurace and you do not need a special sales tax license.</b></span></h3>
+          <h2 class="text-white mt-0">When you invite us into your business do we add liability or tax risk?</h2>
+          <hr class="divider light my-4">
+          <h3 class="text-black mb-4"><span style="background-color: #FFFF00"><b>The answer is no.  In the state of Colorado we are required to provide proper insurace and you do not need a special sales tax license.</b></span></h3>
           <a class="btn btn-light btn-xl js-scroll-trigger" href="#services">Get Started!</a>
         </div>
       </div>
@@ -245,6 +250,9 @@ export default {
     HelloWorld,
   },
 };
+$('navbar-nav>li>a').on('click', function(){
+    $('.navbar-collapse').collapse('hide');
+});
 
 
 (function() {
@@ -331,7 +339,7 @@ $navbar-height: 72px;
         color: $gray-600;
         font-family: $font-family-sans-serif;
         font-weight: $font-weight-bold;
-        font-size: 0.9rem;
+        font-size: 1.1rem;
         padding: 0.75rem 0;
         &:hover,
         &:active {
@@ -356,15 +364,16 @@ $navbar-height: 72px;
     .navbar-nav {
       .nav-item {
         .nav-link {
-          color: fade-out($white, .3);
-          padding: 0 1rem;
+          background-color: white;
+          color: fade-out(#000000, .3);
+          padding: 0 2rem;
           &:hover {
             color: $white;
           }
         }
         &:last-child {
           .nav-link {
-            padding-right: 0;
+            padding-right: 1;
           }
         }
       }
