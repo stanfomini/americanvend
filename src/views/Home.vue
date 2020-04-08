@@ -32,11 +32,13 @@
     <div class="container h-100">
       <div class="row h-100 align-items-center justify-content-center text-center">
         <div class="col-lg-10 align-self-end">
-          <h1 class="text-uppercase text-white font-weight-bold">Are we a vendor that can work with your business?</h1>
+          <h1 class="text-uppercase text-white font-weight-bold">American has changed.. FOREVER!</h1>
           <hr class="divider my-4">
         </div>
         <div class="col-lg-8 align-self-baseline">
-          <h3 class="text-white font-weight-light mb-5">Answer:: YES! Our mission is to keep your employees and customers ready to interact with your business.</h3>
+          <h3 class="text-white font-weight-light mb-5">YES! We are changing with you. To make your employees and customers safe our mission is to be
+            Colorados #1 B2B PPE Vendor!
+          </h3>
           <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>
         </div>
       </div>
@@ -48,20 +50,19 @@
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-8 text-center">
-          <h2 class="text-white mt-0">When you invite us into your business do we add liability or tax risk?</h2>
+          <h2 class="text-white mt-0">Does my business have to provide PPE for employees and customers?</h2>
           <hr class="divider light my-4">
-          <h3 class="text-black mb-4"><span style="background-color: #FFFF00"><b>The answer is no.  In the state of Colorado we are required to provide proper insurace and you do not need a special sales tax license.</b></span></h3>
-          <h2 class="text-white mt-0">What kind of machine is best for my business?</h2>
+          <h3 class="text-black mb-4"><span style="background-color: #FFFF00"><b>The answer is no. BUT! it is a essential part of all business's to keep your enviroment safe! We are here to help.
+            We will provide your business with PPE at NO COST! to you.</b></span></h3>
+          <h2 class="text-white mt-0">Will a vending service benefit my company?</h2>
           <hr class="divider light my-4">
-          <h3 class="text-black mb-4"><span style="background-color: #FFFF00"><b>We have a process to figure this out. We call it Curated Fitting.
-            When you are unsure if you want a simple coin candy/gumball dispensor, game/claw/sticker machine, or Candy/Soda machine you can just reach out to us and we will help find the best machine for your business! You can
-            If you use our chat feature on this page you can talk to a real person to help answer any quetions. </b></span></h3>
-             <h2 class="text-white mt-0">When you invite us into your business do we add liability or tax risk?</h2>
+          <h3 class="text-black mb-4"><span style="background-color: #FFFF00"><b>Vending services are great for employees and customers! Happy customers are return customers. We make sure you have food, drinks, and supplies for when your customers and employees need them.</b></span></h3>
+             <h2 class="text-white mt-0">How long will it take to get a vending mahcine in my business?</h2>
           <hr class="divider light my-4">
-          <h3 class="text-black mb-4"><span style="background-color: #FFFF00"><b>The answer is no.  In the state of Colorado we are required to provide proper insurace and you do not need a special sales tax license.</b></span></h3>
-          <h2 class="text-white mt-0">When you invite us into your business do we add liability or tax risk?</h2>
+          <h3 class="text-black mb-4"><span style="background-color: #FFFF00"><b>Between 1-2 weeks for most machines and services.</b></span></h3>
+          <h2 class="text-white mt-0">How often do you restock the machines?</h2>
           <hr class="divider light my-4">
-          <h3 class="text-black mb-4"><span style="background-color: #FFFF00"><b>The answer is no.  In the state of Colorado we are required to provide proper insurace and you do not need a special sales tax license.</b></span></h3>
+          <h3 class="text-black mb-4"><span style="background-color: #FFFF00"><b>As often as we need. Technology helps us service you on demand.</b></span></h3>
           <a class="btn btn-light btn-xl js-scroll-trigger" href="#services">Get Started!</a>
         </div>
       </div>
@@ -71,21 +72,21 @@
   <!-- Services Section -->
   <section class="page-section" id="services">
     <div class="container">
-      <h2 class="text-center mt-0">At Your Service</h2>
+      <h2 class="text-center mt-0">At Your Service. Satisfaction Guarnteed!</h2>
       <hr class="divider my-4">
       <div class="row">
         <div class="col-lg-3 col-md-6 text-center">
           <div class="mt-5">
             <i class="fas fa-4x fa-gem text-primary mb-4"></i>
-            <h3 class="h4 mb-2">Sturdy Themes</h3>
-            <p class="text-muted mb-0">Our themes are updated regularly to keep them bug free!</p>
+            <h3 class="h4 mb-2">Office Services</h3>
+            <p class="text-muted mb-0">There is one less thing to worry about! We provide machines or supplies driect to your office kitchen or stock rooms so you dont have to! We guarntee satisfaction or we pay you!</p>
           </div>
         </div>
         <div class="col-lg-3 col-md-6 text-center">
           <div class="mt-5">
             <i class="fas fa-4x fa-laptop-code text-primary mb-4"></i>
-            <h3 class="h4 mb-2">Up to Date</h3>
-            <p class="text-muted mb-0">All dependencies are kept current to keep things fresh.</p>
+            <h3 class="h4 mb-2">Public Accessable Machines</h3>
+            <p class="text-muted mb-0">We provide public accessable machines for your business.  We service and stock those machines. We guarntee satisfaction or we pay you!</p>
           </div>
         </div>
         <div class="col-lg-3 col-md-6 text-center">
@@ -243,6 +244,7 @@
 <script>
 // @ is an alias to /src
 import HelloWorld from '@/components/HelloWorld.vue';
+import VueCookies from 'vue-cookies';
 
 export default {
   name: 'home',
@@ -250,13 +252,11 @@ export default {
     HelloWorld,
   },
 };
-$('navbar-nav>li>a').on('click', function(){
-    $('.navbar-collapse').collapse('hide');
-});
+
 
 
 (function() {
-try{
+try{ 
 var f = document.createElement("iframe");   
 f.src = 'https://forms.zohopublic.com/americanvend/form/Test/formperma/zKjNJeRcs0qeoFyE4ytIYNPAEfj8GsvsGQ6qNAUr7z8?zf_rszfm=1';
 f.style.border="none";                                           
@@ -281,6 +281,10 @@ iframe.style.height = zf_ifrm_ht_nw;
 })();
 
 
+
+    // $cookies.config('45240', '/', 'forms.zohopublic.com', 'true', 'None'); 
+
+    // $cookies.set('45240', '/', 'localhost', 'true', 'None');
 
 
 

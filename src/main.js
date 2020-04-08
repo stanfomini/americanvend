@@ -1,6 +1,6 @@
-import VueFbCustomerChat from 'vue-fb-customer-chat';
 import { createPopper } from '@popperjs/core';
 import Vue from 'vue';
+import VueCookies from 'vue-cookies';
 import { BootstrapVue, IconsPlugin } from 'bootstrap-vue';
 import App from './App.vue';
 import router from './router';
@@ -19,6 +19,9 @@ Vue.config.productionTip = false;
 Vue.use(BootstrapVue);
 // // Optionally install the BootstrapVue icon components plugin
 Vue.use(IconsPlugin);
+Vue.use(VueCookies);
+
+document.cookie = 'cross-site-cookie=bar; SameSite=None; Secure';
 
 // Vue.use(VueFbCustomerChat, {
 //   page_id: 108398407383203,
